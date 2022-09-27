@@ -41,9 +41,10 @@ try {
 
 <div style="text-align:center; background-color:darkgray;">
     <h1 style="font-family:cursive;">Admin Page</h1>
+    <a style="text-decoration:none; color:red;" type="button" href="index.php?">Logout</a>
 </div>
 
-<body style="background-color:darkgray;">
+<body style="background-color:darkgray; height:auto">
     <div style="height:600px; display: flex; align-items:center; justify-content:center; background-color:darkgray" class="container">
         <table class="table">
             <thead class="border">
