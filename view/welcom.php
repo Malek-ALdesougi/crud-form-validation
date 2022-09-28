@@ -1,5 +1,5 @@
 <?php
-include_once("connection.php");
+include_once("../backEnd/connection.php");
 
 if (isset($_GET['email'])) {
     $userEmailWelcom = $_GET['email'];
@@ -13,6 +13,8 @@ if (isset($_GET['email'])) {
 if (isset($_POST['logout'])) {
     header("Location: login.php");
 }
+
+
 
 ?>
 
@@ -29,7 +31,7 @@ if (isset($_POST['logout'])) {
 <body style="text-align: center; background-color:darkgray;">
 
     <h1 style=" margin-top:100px; color:darkorange;">Welcome <span style="color: black;"><?php echo $userEmailWelcom ?></span></h1>
-    <img width="200px" height="200px" src="./images/<?php echo $final['image'] ?>" alt="">
+    <img width="200px" height="200px" src="../images/<?php echo $final['image'] ?>" alt="">
 
     <!-- REDIRECT THE USER TO THE MAIN PAGE AFTER CLICK LOGOUT BUTTON -->
     <form action="login.php" method="POST">
